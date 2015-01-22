@@ -2,11 +2,6 @@ FROM debian:wheezy
 
 MAINTAINER Remmelt Pit <remmelt@remmelt.com>
 
-RUN apt-get update -qq \
-    && apt-get install -yqq git devscripts \
-    && apt-get autoclean \
-    && rm -rf /var/lib/apt/lists/*
-
 RUN mkdir /docker-gc
 WORKDIR /docker-gc
 
