@@ -10,8 +10,8 @@ ADD https://raw.githubusercontent.com/spotify/docker-gc/master/docker-gc /docker
 RUN echo "$DOCKER_GC_SHA256 /docker-gc/docker-gc" | sha256sum -c -
 RUN chmod +x /docker-gc/docker-gc
 
-ENV DOCKER_SHA256 b4fb75be087eafe6cda26038a045854ab2d497adad9276a45c37d7d55da764fc
-ADD https://get.docker.io/builds/Linux/x86_64/docker-1.4.1 /bin/docker
+ENV DOCKER_SHA256 f0a51ba39eb0be48875a8f81cc59e5ebb9aca0dddf738ea70a5fbd13de409a16
+ADD https://get.docker.io/builds/Linux/x86_64/docker-1.3.2 /bin/docker
 RUN echo "$DOCKER_SHA256 /bin/docker" | sha256sum -c -
 RUN chmod +x /bin/docker
 
