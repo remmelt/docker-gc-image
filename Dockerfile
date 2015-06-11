@@ -5,7 +5,7 @@ MAINTAINER Remmelt Pit <remmelt@remmelt.com>
 RUN mkdir /docker-gc
 WORKDIR /docker-gc
 
-ENV DOCKER_GC_SHA256 a406b7bb75b372e698c944cf53d069391c3d2a115f0e6fd7146d48fa364eea76
+ENV DOCKER_GC_SHA256 495a553b3a5f3ca3fc30ba95b1b56d86353853d347bbfbe0fd6d5f1433b6f7cd
 ADD https://raw.githubusercontent.com/spotify/docker-gc/master/docker-gc /docker-gc/docker-gc
 RUN echo "$DOCKER_GC_SHA256 /docker-gc/docker-gc" | sha256sum -c -
 RUN chmod +x /docker-gc/docker-gc
