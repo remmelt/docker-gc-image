@@ -1,5 +1,8 @@
 #docker-gc in a container
 
+## USE SPOTIFY'S SUPPORTED IMAGE INSTEAD!
+This project is now outdated. The good people at Spotify have added a Dockerfile to the official docker-gc repository. Here's the [official Spotify docker-gc image](https://registry.hub.docker.com/u/spotify/docker-gc/).
+
 This is [Spotify's docker-gc](https://github.com/spotify/docker-gc) in a docker container. No need to build the deb, or anything.
 
 ##How to run garbage collection
